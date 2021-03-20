@@ -1,8 +1,9 @@
 import React, { PureComponent } from "react";
+import { Link } from "react-router-dom";
 
 export default class Topbar extends PureComponent {
   logout = () => {
-    localStorage.removeItem("adminToken");
+    localStorage.removeItem("token");
     localStorage.removeItem("tokenDate");
     window.location.href = "/";
   };
@@ -58,10 +59,10 @@ export default class Topbar extends PureComponent {
                     <div className="dropdown-inner">
                       <ul className="link-list">
                         <li>
-                          <a href="html/user-profile-setting.html">
+                          <Link to="/settings">
                             <em className="icon ni ni-setting-alt"></em>
                             <span>Account Setting</span>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
