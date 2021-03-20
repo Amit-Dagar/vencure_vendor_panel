@@ -219,6 +219,14 @@ export default class Agreements extends PureComponent {
                             </a>
                           </li>
                           <li>
+                            <a
+                              href="#"
+                              onClick={() => this.filter("expiring_soon")}
+                            >
+                              <span>Filter By Expiring in 15 Days</span>
+                            </a>
+                          </li>
+                          <li>
                             <a href="#" onClick={() => this.filter(2)}>
                               <span>Filter By Running</span>
                             </a>
