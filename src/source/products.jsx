@@ -147,7 +147,7 @@ export default class Products extends PureComponent {
             <div className="nk-block-head-content">
               <div className="toggle-wrap nk-block-tools-toggle">
                 <div className="row">
-                  <div className="col-md-8">
+                  <div className="col-md-12">
                     <div className="form-row justify-content-end">
                       <div className="col-8">
                         <input
@@ -169,15 +169,6 @@ export default class Products extends PureComponent {
                         </button>
                       </div>
                     </div>
-                  </div>
-                  <div className="col-md-4">
-                    <button
-                      className="btn btn-primary d-inline"
-                      data-toggle="modal"
-                      data-target="#createProduct"
-                    >
-                      <span className="pt-0">New Product</span>
-                    </button>
                   </div>
                 </div>
               </div>
